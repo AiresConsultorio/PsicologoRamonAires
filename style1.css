@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 45px;
+    padding-top: 5px;
+}
+
+a {
+    text-transform: uppercase;
+    color: yellow;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 30px;
+}
+
+a:hover {
+    background-color: wheat
+}
+
+/*isso é só placeholder, pra eu poder ver a porra da nav bar*/
+main {
+    margin-top: 100px;
+}
+
+footer {
+    flex: 1;
+}
