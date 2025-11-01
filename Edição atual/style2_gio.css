@@ -22,23 +22,27 @@ nav {
     justify-content: space-around;
     background-color: black;
     height: 45px;
-    padding-top: 5px;
 }
 
 a {
     text-transform: uppercase;
-    color: yellow;
+    font-family: Verdana;
+    color: #fefefe;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
     transition: background-color 0.3s;
+    transition: transform 0.3s;
+    font-weight: 650;
     cursor: pointer;
-    font-weight: bolder;
     border: 30px;
 }
 
 a:hover {
-    background-color: wheat
+    background-color: #fefefe;
+    color: black;
+    text-shadow: black 10px;
+    transform: scale(1.1);
 }
 
 /*isso é só placeholder, pra eu poder ver a porra da nav bar*/
