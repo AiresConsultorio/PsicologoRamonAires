@@ -1,27 +1,25 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body { 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-header{
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--navbar);
+    color: white;
+    height: 45px;
+
+    
+}
+
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    height: 45px;
 }
 
 a {
@@ -45,11 +43,23 @@ a:hover {
     transform: scale(1.1);
 }
 
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1c1c1c;
+}
+
+.banner {
+    width: 50%;
+}
+
+.content {
+    background-color: var(--theme-claro);
+    color: black;
+}
 /*isso é só placeholder, pra eu poder ver a porra da nav bar*/
 main {
     margin-top: 100px;
-}
-
-footer {
-    flex: 1;
 }
