@@ -10,7 +10,6 @@ body {
 }
 
 header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,4 +51,9 @@ main {
 
 footer {
     flex: 1;
+}
+
+.div1, .div2, .div3, .div4, .div5 {
+    background-color: gray;
+    height: 300px;
 }
