@@ -6,4 +6,28 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
+
+    grid-template-rows: min-content 1fr min-content;
 }
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
