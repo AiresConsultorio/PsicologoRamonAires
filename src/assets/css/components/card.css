@@ -67,7 +67,7 @@
     user-select: none;
 }
 
-.card button {
+.card .button {
     padding: 5px;
 }
 
@@ -87,13 +87,13 @@ section:nth-child(odd) .card .card-texto {
     background-color: var(--main);
 }
 
-.card:hover button {
+.card:hover .button {
     color: var(--main);
     background-color: var(--secondary);
 }
 
-.card button:hover {
-    font-size: 1.05rem;
+.card .button:hover {
+    transform: scale(1.1);
 }
 
 section:nth-child(odd) .card:hover {

@@ -1,4 +1,4 @@
-button {
+.button {
     padding: 15px;
     color: var(--secondary);
     background-color: var(--main);
@@ -7,12 +7,15 @@ button {
     border: 1px solid var(--main);
     border-radius: 5px;
 
+    text-decoration: none;
+    text-align: center;
+
     transition: 0.3s;
 
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     color: var(--main);
     background-color: var(--secondary);
 }
