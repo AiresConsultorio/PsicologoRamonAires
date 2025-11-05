@@ -1,0 +1,41 @@
+.card-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    margin: 15px 0;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container h2 {
+    margin: 15px 0; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 25%;
+    height: 150px;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 15px 0;
+}
+
+.card .card-titulo {
+    height: 20%;
+}
+
+.card .card-texto {
+    height: 80%;
+}
+
+.card .card-texto p {
+    text-align: center;
+}

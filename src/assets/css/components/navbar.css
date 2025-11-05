@@ -26,3 +26,15 @@
     text-shadow: black 10px;
     transform: scale(1.1);
 }
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+}
+
+.banner {
+    width: 50%;
+    clip-path: inset(10px);
+}
