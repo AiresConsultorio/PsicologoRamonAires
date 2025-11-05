@@ -1,5 +1,4 @@
 .card-sec {
-    display: flex;
     flex-direction: column;
 }
 
@@ -26,10 +25,59 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     padding: 15px 0;
+    transition: 0.2s;
 }
+
+.card button {
+    background-color: #282828;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    font-size: 1.05rem;
+}
+
+.card:hover {
+    background-color: #282828;
+    color: white;
+}
+
+.card:hover button {
+    background-color: white;
+    color: black;
+}
+
+section:nth-child(odd) .card {
+    background-color: #282828;
+    color: white;
+}
+
+section:nth-child(odd) .card:hover {
+    background-color: white;
+    color: black;
+}
+
+.card-titulo, .card-texto {
+    user-select: none;
+}
+
 
 .card .card-titulo {
     height: 20%;
+    text-transform: uppercase;
+}
+
+section:nth-child(odd) .card .card-texto {
+    border-top: 2px solid white;
+}
+
+section:nth-child(odd) .card:hover .card-texto {
+    border-top: 2px solid black;
 }
 
 .card .card-texto {
@@ -37,5 +85,6 @@
 }
 
 .card .card-texto p {
+    padding: 0 2px;
     text-align: center;
 }

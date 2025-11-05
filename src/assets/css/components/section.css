@@ -1,6 +1,16 @@
 section {
+    display: flex;
 }
 
 section:nth-child(even) {
-    background-color: lightgray;
+    background-color: #282828;
+}
+
+section:nth-child(even) > h2 {
+    color: white;
+}
+
+section > h2 {
+    font-size: 1.2em;
+    margin: 15px 0;
 }
