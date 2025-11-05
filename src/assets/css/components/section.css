@@ -1,0 +1,16 @@
+section {
+    display: flex;
+}
+
+section:nth-child(even) {
+    background-color: var(--main);
+}
+
+section:nth-child(even) > h2 {
+    color: var(--secondary);
+}
+
+section > h2 {
+    font-size: 1.2em;
+    margin: 15px 15px 0 15px;
+}
