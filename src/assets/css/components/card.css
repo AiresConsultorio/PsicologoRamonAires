@@ -1,13 +1,15 @@
+/* Página de Estilização dos componentes relacionados a Card */
+
 .card-sec {
     flex-direction: column;
 }
 
 .card-container {
-    margin: 15px 0;
-    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    margin: 15px 0;
 }
 
 .card-container h2 {
@@ -17,74 +19,88 @@
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     margin: 15px;
+    padding: 15px 0;
+
     width: 25%;
     height: 150px;
-    align-items: center;
-    background-color: white;
+    
+    background-color: var(--secondary);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
     border-radius: 15px;
-    padding: 15px 0;
+
     transition: 0.2s;
 }
 
+.card .card-titulo {
+    height: 20%;
+
+    text-transform: uppercase;
+}
+
+.card .card-texto {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-texto p, .card .card-texto a{
+    padding: 0 2px;
+
+    text-align: center;
+}
+
+.card .card-texto a {
+    text-decoration: none;
+}
+
+.card .card-texto a:visited {
+    color: brown;
+}
+
+.card-titulo {
+    user-select: none;
+}
+
 .card button {
-    background-color: #282828;
-    color: white;
-    border: none;
     padding: 5px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
+}
+
+section:nth-child(odd) .card {
+    color: var(--secondary);
+    background-color: var(--main);
+}
+
+section:nth-child(odd) .card .card-texto {
+    border-top: 2px solid var(--secondary);
+}
+
+/* HOVERS */
+
+.card:hover {
+    color: var(--secondary);
+    background-color: var(--main);
+}
+
+.card:hover button {
+    color: var(--main);
+    background-color: var(--secondary);
 }
 
 .card button:hover {
     font-size: 1.05rem;
 }
 
-.card:hover {
-    background-color: #282828;
-    color: white;
-}
-
-.card:hover button {
-    background-color: white;
-    color: black;
-}
-
-section:nth-child(odd) .card {
-    background-color: #282828;
-    color: white;
-}
-
 section:nth-child(odd) .card:hover {
-    background-color: white;
-    color: black;
-}
-
-.card-titulo, .card-texto {
-    user-select: none;
-}
-
-
-.card .card-titulo {
-    height: 20%;
-    text-transform: uppercase;
-}
-
-section:nth-child(odd) .card .card-texto {
-    border-top: 2px solid white;
+    color: var(--main);
+    background-color: var(--secondary);
 }
 
 section:nth-child(odd) .card:hover .card-texto {
-    border-top: 2px solid black;
-}
-
-.card .card-texto {
-    height: 80%;
-}
-
-.card .card-texto p {
-    padding: 0 2px;
-    text-align: center;
+    border-top: 2px solid var(--main);
 }

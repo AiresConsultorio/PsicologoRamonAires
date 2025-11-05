@@ -1,0 +1,18 @@
+button {
+    padding: 15px;
+    color: var(--secondary);
+    background-color: var(--main);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border: 1px solid var(--main);
+    border-radius: 5px;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--main);
+    background-color: var(--secondary);
+}

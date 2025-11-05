@@ -1,0 +1,28 @@
+.introducao .image-placeholder {
+    width: 30%;
+    background-color: blueviolet;
+}
+
+.introducao .introducao-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 0 16px;
+}
+
+.introducao .introducao-titulos h1, .introducao-titulos h2 {
+    text-align: center;
+    margin: 7px 0;
+}
+
+.introducao .introducao-texto p {
+    text-align: justify;
+    text-indent: 35px;
+    line-height: 1.5;
+}
+
+.introducao .introducao-container button {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
