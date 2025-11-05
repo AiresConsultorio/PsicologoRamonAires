@@ -1,40 +1,37 @@
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: var(--navbar);
+    background-color: var(--main);
     color: white;
     height: 45px;
 
     
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+.main-content {
+    display: flex;
+
 }
 
-a {
-    text-transform: uppercase;
-    font-family: Verdana;
-    color: #fefefe;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: background-color 0.3s;
-    transition: transform 0.3s;
-    font-weight: 650;
-    cursor: pointer;
-    border: 30px;
+.image-placeholder {
+    width: 30%;
+    background-color: blueviolet;
 }
 
-a:hover {
-    background-color: #fefefe;
-    color: black;
-    text-shadow: black 10px;
-    transform: scale(1.1);
+.main-text {
+    width: 70%;
+    padding: 0 16px;
+}
+
+.main-text h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.main-text p {
+    text-align: justify;
+    text-indent: 35px;
+    line-height: 1.5;
 }
 
 .banner-container {
@@ -52,4 +49,35 @@ a:hover {
 .content {
     background-color: var(--theme-claro);
     color: black;
+}
+
+.faq {
+    margin: 15px 0;
+    padding: 16px;
+}
+
+.faq h2 {
+    margin-bottom: 15px;
+}
+
+.pergunta {
+    background-color: rgb(158, 158, 158);
+}
+
+.pergunta p {
+    padding: 0 15px 15px 15px;
+}
+
+.pergunta h3 {
+    background-color: var(--secondary);
+    color: white;
+    text-indent: 35px;
+    text-transform: uppercase;
+    user-select: none;
+    font-size: 1.2em;
+    padding: 5px 0;
+    border-radius: 0 15px 0 15px;
+    width: 50%;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
