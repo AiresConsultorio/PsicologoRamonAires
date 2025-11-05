@@ -6,14 +6,6 @@
     z-index: 1000;
 }
 
-.navbar, .footerbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--main);
-    color: var(--secondary);
-    height: 45px;
-}
-
 .navbar a {
     text-transform: uppercase;
     font-family: Verdana;
@@ -30,6 +22,14 @@
 .navbar a:hover {
     background-color: var(--secondary);
     color: var(--main);
+}
+
+.navbar, .footerbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main);
+    color: var(--secondary);
+    height: 45px;
 }
 
 .banner-container {
