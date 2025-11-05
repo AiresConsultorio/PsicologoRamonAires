@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    font-family: Verdana;
+    color: var(--secondary);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    font-weight: 650; 
+    cursor: pointer;
+    border: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.navbar a:hover {
+    background-color: var(--secondary);
+    color: var(--main);
+}
+
+.navbar, .footerbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main);
+    color: var(--secondary);
+    height: 45px;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+}
+
+.banner {
+    width: 50%;
+    clip-path: inset(10px);
+}

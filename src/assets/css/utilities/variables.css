@@ -1,4 +1,6 @@
+/* Variaveis do site */
+
 :root {
-    --navbar: black;
-    --background: blueviolet;
+    --main: #282828;
+    --secondary: #fefefe;
 }
