@@ -22,7 +22,7 @@
     line-height: 1.5;
 }
 
-.introducao .introducao-container button {
+.introducao .introducao-container .button {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
