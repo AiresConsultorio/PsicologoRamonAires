@@ -1,5 +1,12 @@
+/* Documento de padronização da tag section */
+
 section {
     display: flex;
+}
+
+section > h2 {
+    font-size: 1.2em;
+    margin: 15px 15px 0 15px;
 }
 
 section:nth-child(even) {
@@ -8,9 +15,4 @@ section:nth-child(even) {
 
 section:nth-child(even) > h2 {
     color: var(--secondary);
-}
-
-section > h2 {
-    font-size: 1.2em;
-    margin: 15px 15px 0 15px;
 }
