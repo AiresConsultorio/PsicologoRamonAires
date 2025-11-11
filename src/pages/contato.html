@@ -14,24 +14,71 @@
 <body>
     <header class="cabecalho">
         <nav class="navbar">
-            <a alt="home" href="index.html">início</a>
-            <a alt="sobremim" href="sobremim.html">sobre mim</a>
-            <a alt="contato" href="contato.html">contato</a>
-            <a alt="curriculo" href="meutrabalho.html">meu trabalho</a>
+            <a href="index.html">início</a>
+            <a href="sobre_Mim.html">sobre mim</a>
+            <a href="contato.html">contato</a>
+            <a href="meu_Trabalho.html">meu trabalho</a>
+            <a href="#faq">dúvidas frequentes</a>
         </nav>
-
         <div class="banner-container">
             <img class="banner" src="../../public/images/logo_aires_psicologo.jpg" alt="Logotipo do consultório">
         </div>
     </header>
     
     <main class="principal">
-        <div class="main-content">
-            <h1 class="título_main"> Meios de Contato: </h1>
-            <p class="breve_descrição_main">Whatsapp: (19) 99851-8780 </p>
-            <p class="breve_descrição_main"> Instagram profissional: @psi_airesreis</p>
-            <p class="breve_descrição_main"> E-mail: psico.airesreis@gmail.com</p>
-        </div>
+        <section class="card-sec">
+            <h2>Meios de Contato</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-titulo">Whatsapp</h3>
+                    <div class="card-texto">
+                        <a href="https://wa.me/5519998518780" target="_blank">(19) 99851-8780</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-titulo">Instagram</h3>
+                    <div class="card-texto">
+                        <a href="https://www.instagram.com/psi_airesreis/" target="_blank">@psi_airesreis</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-titulo">E-mail</h3>
+                    <div class="card-texto">
+                        <a href="mailto:psico.airesreis@gmail.com" target="_blank">psico.airesreis@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-sec" id="faq">
+            <h2>Perguntas mais frequentes</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-titulo">Agendamento</h3>
+                    <div class="card-texto">
+                        <p>Agendamentos somente através de Whatsapp e Instagram</p>
+                        <a href="contato.html">Acesse a página de contato</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-titulo">Hórarios</h3>
+                    <div class="card-texto">
+                        <p>Segunda-feira à Quinta-feira 07:00 às 20:00</p>
+                        <p>Sexta-Feira 07:00 às 12:00</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-titulo">Convênio</h3>
+                    <div class="card-texto">
+                        <p>Atualmente participo do plano de convênio do Hospital Dona Balbina de Porto Ferreira</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="rodape">
