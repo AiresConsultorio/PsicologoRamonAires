@@ -31,3 +31,20 @@ Crição de uma página promocional contendo quem é *Ramon Aires dos Reis*, com
 [ ] Wireframe do Site
 
 [ ] Diagrama de Casos de Uso
+
+## Alterações levantadas pelo professor
+[x] Atualização do README.md
+
+[ ] Colocar mais vida no site, mais cores e estilizar o background
+
+[ ] Aumentar o tamanho das letras
+
+[ ] Colocar uma div com o maps e o endereço do consultorio
+
+[ ] Colocar a logo do whatsapp no canto inferior e colocar elas também nas páginas sobre_mim
+
+[ ] Colocar as avaliações dos pacientes
+
+[x] Revisão gramatical
+
+[ ] Tentar trazer mais imagens
