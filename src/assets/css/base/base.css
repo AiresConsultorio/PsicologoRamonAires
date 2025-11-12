@@ -37,3 +37,9 @@ h1, h2, h3, h4, h5 {
     grid-area: rodape;
 }
 
+/*estilização a ser adicionada*/
+.maps {
+    width: 450px;
+    height: 250px;
+    border: 0px;
+}
