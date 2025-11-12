@@ -18,7 +18,7 @@ body {
         "principal"
         "rodape";
 
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: min-content 1fr max-content;
 }
 
 h1, h2, h3, h4, h5 {
@@ -35,11 +35,16 @@ h1, h2, h3, h4, h5 {
 
 .rodape {
     grid-area: rodape;
+    padding-bottom: 15px;
 }
 
 /*estilização a ser adicionada*/
-.maps {
-    width: 450px;
-    height: 250px;
+iframe{
+    display: flexbox;
+    justify-content: baseline;
+    width: 650px;
+    height: 450px;
+    padding: 15px;
+    margin-left: 100px;
     border: 0px;
 }

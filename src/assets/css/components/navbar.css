@@ -32,6 +32,12 @@
     height: 45px;
 }
 
+.footerbar {
+    flex-direction: column;
+    align-items: baseline;
+    
+}
+
 .banner-container {
     display: flex;
     align-items: center;
