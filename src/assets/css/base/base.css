@@ -18,7 +18,7 @@ body {
         "principal"
         "rodape";
 
-    grid-template-rows: min-content 1fr max-content;
+    grid-template-rows: min-content 1fr 10%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
 
 .rodape {
     grid-area: rodape;
-    padding-bottom: 15px;
+    background-color: var(--main);
 }
 
 /*estilização a ser adicionada*/
