@@ -8,6 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-wrap: wrap;
     
     margin: 15px 0;
 }
@@ -103,4 +105,12 @@ section:nth-child(odd) .card:hover {
 
 section:nth-child(odd) .card:hover .card-texto {
     border-top: 2px solid var(--main);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        
+        flex-direction: row;
+        
+    }
 }

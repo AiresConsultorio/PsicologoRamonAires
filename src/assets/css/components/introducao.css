@@ -1,6 +1,11 @@
-.introducao .image-placeholder {
-    width: 30%;
-    background-color: blueviolet;
+.introducao .airesImagem img {
+    width: 100%;
+}
+
+.introducao .airesImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introducao .introducao-container {
@@ -25,4 +30,12 @@
     text-align: justify;
     text-indent: 35px;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .introducao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
