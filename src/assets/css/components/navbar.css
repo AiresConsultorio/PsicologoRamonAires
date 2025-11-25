@@ -24,7 +24,7 @@
     color: var(--main);
 }
 
-.navbar, .footerbar {
+.navbar{
     display: flex;
     justify-content: space-around;
     background-color: var(--main);
@@ -33,8 +33,6 @@
 }
 
 .footerbar {
-    
-    display: flex;
     flex-direction: column;
     align-items: last baseline;  
 }
@@ -43,6 +41,12 @@
     display: flexbox;
     margin-right: 8%;
 }
+
+.footerbar a {
+    margin-bottom: 15px;
+}
+
+
 
 .banner-container {
     display: flex;
