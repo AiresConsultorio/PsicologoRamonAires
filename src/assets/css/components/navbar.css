@@ -24,7 +24,7 @@
     color: var(--main);
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
     background-color: var(--main);
@@ -33,20 +33,20 @@
 }
 
 .footerbar {
+    display: flex;
     flex-direction: column;
-    align-items: last baseline;  
+
 }
 
 .WP, .Insta{
-    display: flexbox;
+    display: flex;
     margin-right: 8%;
+    align-self: last baseline;
 }
 
 .footerbar a {
     margin-bottom: 15px;
 }
-
-
 
 .banner-container {
     display: flex;
