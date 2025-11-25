@@ -6,7 +6,15 @@
     z-index: 1000;
 }
 
-.navbar a {
+.navfooter {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a, .navfooter a {
     text-transform: uppercase;
     font-family: Verdana;
     color: var(--secondary);
@@ -19,12 +27,12 @@
     border-radius: 0 0 5px 5px;
 }
 
-.navbar a:hover {
+.navbar a:hover, .navfooter a:hover {
     background-color: var(--secondary);
     color: var(--main);
 }
 
-.navbar {
+.navbar, .navfooter {
     display: flex;
     justify-content: space-around;
     background-color: var(--main);
@@ -35,7 +43,6 @@
 .footerbar {
     display: flex;
     flex-direction: column;
-
 }
 
 .WP, .Insta{
@@ -46,6 +53,12 @@
 
 .footerbar a {
     margin-bottom: 15px;
+}
+
+h5 {
+    color: white;
+    margin-left: 1.0%;
+    align-self: baseline;
 }
 
 .banner-container {
