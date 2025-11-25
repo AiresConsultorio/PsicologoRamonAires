@@ -33,8 +33,15 @@
 }
 
 .footerbar {
+    
     display: flex;
     flex-direction: column;
+    align-items: last baseline;  
+}
+
+.WP, .Insta{
+    display: flexbox;
+    margin-right: 8%;
 }
 
 .banner-container {
