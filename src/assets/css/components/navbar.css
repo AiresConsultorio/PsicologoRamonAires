@@ -6,15 +6,7 @@
     z-index: 1000;
 }
 
-.navfooter {
-    position:relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar a, .navfooter a {
+.navbar a {
     text-transform: uppercase;
     font-family: Verdana;
     color: var(--secondary);
@@ -27,12 +19,12 @@
     border-radius: 0 0 5px 5px;
 }
 
-.navbar a:hover, .navfooter a:hover {
+.navbar a:hover {
     background-color: var(--secondary);
     color: var(--main);
 }
 
-.navbar, .navfooter {
+.navbar {
     display: flex;
     justify-content: space-around;
     background-color: var(--main);
@@ -49,6 +41,15 @@
     display: flex;
     margin-right: 8%;
     align-self: last baseline;
+}
+
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-decoration:none;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .footerbar a {
