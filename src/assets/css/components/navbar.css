@@ -24,7 +24,7 @@
     color: var(--main);
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
     background-color: var(--main);
@@ -34,22 +34,33 @@
 
 .footerbar {
     display: flex;
-    background-color: red;
-    height: 100%;
-
-    justify-content: center;
+    flex-direction: column;
 }
 
-.site-map, .contatos {
+.WP, .Insta{
     display: flex;
-    flex-direction: column;
+    margin-right: 8%;
+    align-self: last baseline;
+}
+
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-decoration:none;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .footerbar a {
     margin-bottom: 15px;
 }
 
-
+h5 {
+    color: white;
+    margin-left: 1.0%;
+    align-self: baseline;
+}
 
 .banner-container {
     display: flex;
