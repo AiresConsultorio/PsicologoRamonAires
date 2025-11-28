@@ -61,7 +61,7 @@
     text-decoration: none;
 }
 
-.card .card-texto a:visited {
+.card .card-texto {
     color: rgb(3, 91, 132);
 }
 
@@ -78,6 +78,14 @@
     color: rgb(255, 255, 255);
     text-decoration:none;
     font-weight: bolder;
+}
+
+#Whatsapp {
+    color: var(--main);
+}
+
+#Whatsapp:hover {
+    color: var(--secondary);
 }
 
 .linkcoments:hover {
