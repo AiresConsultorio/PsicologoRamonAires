@@ -62,7 +62,7 @@
 }
 
 .card .card-texto a:visited {
-    color: brown;
+    color: rgb(3, 91, 132);
 }
 
 .card-titulo {
@@ -72,6 +72,26 @@
 .card .button {
     padding: 5px;
 }
+
+.linkcoments {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 91, 132);
+    text-decoration:none;
+    font-weight: bolder;
+}
+
+.coments {
+    font-size: 15px;
+}
+
+#fabio {
+    font-size: 13px;
+}
+
+#vera {
+    font-size: 20px;
+}
+
 
 section:nth-child(odd) .card {
     color: var(--secondary);
