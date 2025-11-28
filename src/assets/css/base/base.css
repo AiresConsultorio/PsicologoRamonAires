@@ -9,7 +9,7 @@ body {
     padding: 0px;
     box-sizing: border-box;
 
-    min-height: 100vh;
+    min-height: 40vh;
 
     display: grid;
 
@@ -18,7 +18,7 @@ body {
         "principal"
         "rodape";
 
-    grid-template-rows: min-content 1fr 10%;
+    grid-template-rows: min-content 1fr 150px;
 }
 
 h1, h2, h3, h4, h5 {

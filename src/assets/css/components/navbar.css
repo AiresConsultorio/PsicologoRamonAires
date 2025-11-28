@@ -35,6 +35,7 @@
 .footerbar {
     display: flex;
     flex-direction: column;
+    height: 30px;
 }
 
 .WP, .Insta{
@@ -71,6 +72,6 @@ h5 {
 }
 
 .banner {
-    width: 50%;
+    width: 15vw;
     padding-bottom: 8px;
 }
