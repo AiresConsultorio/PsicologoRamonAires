@@ -1,0 +1,12 @@
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+    padding-top: 50px;
+}
+
+.banner {
+    width: 15vw;
+    padding-bottom: 8px;
+}

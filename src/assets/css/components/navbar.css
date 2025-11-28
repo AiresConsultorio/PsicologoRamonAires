@@ -61,16 +61,3 @@ h5 {
     margin-left: 1.0%;
     align-self: baseline;
 }
-
-.banner-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main);
-    padding-top: 50px;
-}
-
-.banner {
-    width: 50%;
-    padding-bottom: 8px;
-}
