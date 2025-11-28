@@ -75,9 +75,13 @@
 
 .linkcoments {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(3, 91, 132);
+    color: rgb(255, 255, 255);
     text-decoration:none;
     font-weight: bolder;
+}
+
+.linkcoments:hover {
+    color: var(--main);
 }
 
 .coments {
