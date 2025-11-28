@@ -18,12 +18,13 @@ body {
         "principal"
         "rodape";
 
-    grid-template-rows: min-content 1fr 150px;
+    grid-template-rows: min-content 1fr 200px;
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
+
 
 .cabecalho {
     grid-area: cabecalho;
