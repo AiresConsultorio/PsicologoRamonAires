@@ -35,10 +35,12 @@
 .footerbar {
     display: flex;
     flex-direction: column;
+    height: 30px;
 }
 
 .WP, .Insta{
     display: flex;
+    color: rgb(255, 255, 255);
     margin-right: 8%;
     align-self: last baseline;
 }
@@ -60,4 +62,17 @@ h5 {
     color: white;
     margin-left: 1.0%;
     align-self: baseline;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+    padding-top: 50px;
+}
+
+.banner {
+    width: 15vw;
+    padding-bottom: 8px;
 }

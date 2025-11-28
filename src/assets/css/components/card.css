@@ -61,8 +61,8 @@
     text-decoration: none;
 }
 
-.card .card-texto a:visited {
-    color: brown;
+.card .card-texto {
+    color: rgb(3, 91, 132);
 }
 
 .card-titulo {
@@ -72,6 +72,38 @@
 .card .button {
     padding: 5px;
 }
+
+.linkcoments {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight: bolder;
+}
+
+#Whatsapp {
+    color: var(--main);
+}
+
+#Whatsapp:hover {
+    color: var(--secondary);
+}
+
+.linkcoments:hover {
+    color: var(--main);
+}
+
+.coments {
+    font-size: 15px;
+}
+
+#fabio {
+    font-size: 13px;
+}
+
+#vera {
+    font-size: 20px;
+}
+
 
 section:nth-child(odd) .card {
     color: var(--secondary);
