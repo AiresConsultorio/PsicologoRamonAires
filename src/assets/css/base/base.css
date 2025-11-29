@@ -18,7 +18,7 @@ body {
         "principal"
         "rodape";
 
-    grid-template-rows: min-content 1fr 200px;
+    grid-template-rows: min-content 1fr 125px;
 }
 
 h1, h2, h3, h4, h5 {
