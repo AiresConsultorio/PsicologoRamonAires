@@ -4,25 +4,27 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
 
-    min-height: 40vh;
-
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: grid;
-
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "cabecalho"
         "principal"
         "rodape";
-
-    grid-template-rows: min-content 1fr 125px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    padding: 0;
 }
 
 
@@ -37,15 +39,16 @@ h1, h2, h3, h4, h5 {
 .rodape {
     grid-area: rodape;
     background-color: var(--main);
+    padding: 20px 15px;
+    min-height: 120px;
 }
 
 /*estilização a ser adicionada*/
-iframe{
-    display: flexbox;
-    justify-content: baseline;
-    width: 650px;
-    height: 450px;
-    padding: 15px;
-    margin-left: 100px;
-    border: 0px;
+iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 400px;
+    border: none;
+    margin: 20px 0;
+    border-radius: 12px;
 }

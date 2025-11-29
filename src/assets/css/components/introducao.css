@@ -1,29 +1,56 @@
-.introducao .airesImagem img {
+.airesImagem img {
     width: 100%;
+    max-width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    object-fit: cover;
 }
 
-.introducao .airesImagem {
+
+.airesImagem {
+    flex: 1;
+    min-width: 280px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.introducao .introducao-container {
+.introducao-container {
+    flex: 2;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
-    padding: 0 16px;
 }
+
 
 .introducao .introducao-container .button {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-.introducao .introducao-titulos h1, .introducao-titulos h2 {
-    text-align: center;
-    margin: 7px 0;
+.introducao-titulos h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+}
+
+.introducao-titulos h2 {
+    font-size: 1.6rem;
+    opacity: 0.9;
+}
+
+.introducao-titulos h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 15px 0;
+    color: #75CCD6;
+}
+
+
+.introducao-texto p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    text-indent: 0; 
 }
 
 .introducao .introducao-texto p {
@@ -41,5 +68,10 @@
 }
 
 .introducao {
-    color: rgb(3, 91, 132);;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 20px;
+    color: rgb(3, 91, 132);
 }

@@ -1,12 +1,20 @@
 .banner-container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: var(--main);
-    padding-top: 50px;
+    padding: 80px 20px 30px;
 }
 
 .banner {
-    width: 15vw;
-    padding-bottom: 8px;
+    width: 180px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+    .banner {
+        width: 140px;
+    }
 }
