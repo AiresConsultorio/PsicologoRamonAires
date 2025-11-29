@@ -1,139 +1,121 @@
-/* Página de Estilização dos componentes relacionados a Card */
-
 .card-sec {
     flex-direction: column;
 }
 
 .card-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
     flex-wrap: wrap;
-    
-    margin: 15px 0;
+    gap: 24px;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0 15px;
 }
 
 .card-container h2 {
-    margin: 15px 0; 
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    color: #036b85;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 15px;
-    padding: 15px 0;
-
-    width: 25%;
-    height: 150px;
-    
-    background-color: var(--secondary);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    transition: all 0.3s ease;
-    border-radius: 16px;
+    background: white;
+    border-radius: 20px;
     overflow: hidden;
-}
-
-.card .card-titulo {
-    height: 20%;
-
-    text-transform: uppercase;
-}
-
-.card .card-texto {
-    height: 80%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
 }
 
-.card .card-texto p, .card .card-texto a{
-    padding: 0 2px;
-
-    text-align: center;
+section:nth-child(odd) .card {
+    background: var(--main);
+    color: white;
 }
 
-.card .card-texto a {
-    text-decoration: none;
+section:nth-child(odd) .card .card-titulo {
+    color: white;
 }
 
-.card .card-texto {
-    color: rgb(3, 91, 132);
+section:nth-child(odd) .card .card-texto p,
+section:nth-child(odd) .card .card-texto a {
+    color: white;
+    opacity: 0.95;
 }
 
 .card-titulo {
-    user-select: none;
+    background: #036b85;
+    color: white;
+    padding: 18px 20px;
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.card-texto {
+    padding: 24px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card-texto p {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.card-texto a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.card-texto a:hover {
+    opacity: 0.8;
 }
 
 .card .button {
-    padding: 5px;
+    margin: 16px 20px 8px;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    align-self: center;
+    min-width: 220px;
 }
-
-.linkcoments {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-weight: bolder;
-}
-
-
-section:nth-child(odd) .card {
-    color: var(--secondary);
-    background-color: var(--main);
-}
-
-section:nth-child(odd) .card .card-texto {
-    border-top: 2px solid var(--secondary);
-}
-
-/* HOVERS */
 
 .card:hover {
-    color: var(--secondary);
-    background-color: var(--main);
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
-
-.card:hover .button {
-    color: var(--main);
-    background-color: var(--secondary);
-}
-
-.card .button:hover {
-    transform: scale(1.1);
-}
-
-section:nth-child(odd) .card:hover {
-    color: var(--main);
-    background-color: var(--secondary);
-}
-
-section:nth-child(odd) .card:hover .card-texto {
-    border-top: 2px solid var(--main);
-}
-
 
 @media (max-width: 992px) {
     .card {
-        width: 48%;
-        min-width: 280px;
+        flex: 1 1 45%;
     }
 }
 
 @media (max-width: 640px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .card {
-        width: 100%;
-        max-width: 380px;
-        margin: 12px 0;
+        flex: 1 1 100%;
+        max-width: 420px;
+    }
+    
+    .card-titulo {
+        font-size: 1.25rem;
+        padding: 16px;
+    }
+    
+    .card-texto {
+        padding: 20px 18px;
     }
 }
