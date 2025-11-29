@@ -3,20 +3,26 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 70px;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .navbar a {
-    text-transform: uppercase;
-    font-family: Verdana;
     color: var(--secondary);
     text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-    font-weight: 650; 
-    cursor: pointer;
-    border: 30px;
-    border-radius: 0 0 5px 5px;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
 }
 
 .navbar a:hover {
@@ -24,55 +30,59 @@
     color: var(--main);
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
+.banner-container {
     background-color: var(--main);
-    color: var(--secondary);
-    height: 45px;
-}
-
-.footerbar {
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-}
-
-.WP, .Insta{
-    display: flex;
-    color: rgb(255, 255, 255);
-    margin-right: 8%;
-    align-self: last baseline;
-}
-
-
-a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    text-decoration:none;
-    font-weight: bolder;
+    padding: 90px 20px 40px;
     text-align: center;
 }
 
-.footerbar a {
-    margin-bottom: 15px;
+.menu-hamburger {
+    display: none;
+    position: fixed;
+    top: 12px;
+    right: 15px;
+    z-index: 1001;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-h5 {
-    color: white;
-    margin-left: 1.0%;
-    align-self: baseline;
-}
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start;
+        transform: translateY(-100%);
+        flex-direction: column;
+        height: auto;
+        padding-top: 70px;
+        transition: transform 0.35s ease;
+    }
 
-.banner-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main);
-    padding-top: 50px;
-}
+    .navbar a {
+        width: 100%;
+        justify-content: center;
+        padding: 18px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        font-size: 1.1rem;
+    }
 
-.banner {
-    width: 15vw;
-    padding-bottom: 8px;
+    .menu-hamburger {
+        display: block;
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        transform: translateY(0);
+    }
+
+    #menu-toggle:checked ~ .cabecalho::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.65);
+        z-index: 999;
+    }
+
+    .banner-container {
+        padding: 30px 20px 40px; 
+    }
 }

@@ -1,0 +1,69 @@
+.rodape {
+    background-color: var(--main);
+    color: white;
+    padding: 40px 20px 30px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-credito {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 10px 16px;
+    border-radius: 12px;
+}
+
+.footer-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.footer-link.whatsapp {
+    color: white
+}
+
+.footer-link.instagram {
+    color: white
+}
+
+.footer-link svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-link {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
