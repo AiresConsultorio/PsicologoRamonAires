@@ -47,6 +47,10 @@ section:nth-child(odd) .card .card-texto a {
     opacity: 0.95;
 }
 
+section:nth-child(odd) .card .card-texto:hover p{
+    color: gray;
+}
+
 .card-titulo {
     background: #036b85;
     color: white;
@@ -76,7 +80,6 @@ section:nth-child(odd) .card .card-texto a {
 }
 
 .card-texto a {
-    color: inherit;
     text-decoration: underline;
     font-weight: 600;
     text-decoration: none;
@@ -96,23 +99,13 @@ section:nth-child(odd) .card .card-texto a {
     min-width: 220px;
 }
 
-.linkcoments {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-weight: bolder;
-}
-
 #pag_contato {
     color: var(--main);
+    transition: 0.2s;
 }
 
 #pag_contato:hover {
-    color: var(--secondary);
-}
-
-.linkcoments:hover {
-    color: var(--main);
+    color: black;
 }
 
 
