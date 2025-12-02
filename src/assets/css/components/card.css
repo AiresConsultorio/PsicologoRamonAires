@@ -80,11 +80,11 @@
     font-weight: bolder;
 }
 
-#Whatsapp {
+#pag_contato {
     color: var(--main);
 }
 
-#Whatsapp:hover {
+#pag_contato:hover {
     color: var(--secondary);
 }
 
