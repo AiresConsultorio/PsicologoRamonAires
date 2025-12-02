@@ -47,7 +47,8 @@ section:nth-child(odd) .card .card-texto a {
     opacity: 0.95;
 }
 
-section:nth-child(odd) .card .card-texto:hover p{
+section:nth-child(odd) .card .card-texto:hover p,
+section:nth-child(odd) .card .card-texto:hover a {
     color: gray;
 }
 

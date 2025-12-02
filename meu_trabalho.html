@@ -127,6 +127,14 @@
     </nav>
     <h5 class="footer-credito">Site desenvolvido por alunos da FATEC Porto Ferreira - 2025</h5>
 </footer>
+<script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+    </script>
+
 </body>
 
 </html>

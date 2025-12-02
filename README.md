@@ -6,7 +6,6 @@ Desenvolvimento de um site promocional para o Psicólogo *Ramon Aires dos Reis* 
 - Cayo
 - Gabriel
 - Giovani
-- Petrus
 - Pietro
 
 
@@ -15,36 +14,36 @@ Desenvolvimento de um site promocional para o Psicólogo *Ramon Aires dos Reis* 
 Crição de uma página promocional contendo quem é *Ramon Aires dos Reis*, como é sua forma de trabalho, formas de contato, perguntas mais frequentes.
 
 ## Necessidades
-[ ] Fotos do Ramon
+[X] Fotos do Ramon
 
 ## Roadmap Documentos do Projeto:
-[ ] Ficha da Empresa
+[X] Ficha da Empresa
 
-[ ] Mapa Mental
+[X] Mapa Mental
 
-[ ] Requisitos Funcionais e não Funcionais
+[X] Requisitos Funcionais e não Funcionais
 
-[ ] Visão Geral do Projeto
+[X] Visão Geral do Projeto
 
-[ ] Manual de Identidade
+[X] Manual de Identidade
 
-[ ] Wireframe do Site
+[X] Wireframe do Site
 
-[ ] Diagrama de Casos de Uso
+[X] Diagrama de Casos de Uso
 
 ## Alterações levantadas pelo professor
 [x] Atualização do README.md
 
-[ ] Colocar mais vida no site, mais cores e estilizar o background
+[X] Colocar mais vida no site, mais cores e estilizar o background
 
-[ ] Aumentar o tamanho das letras
+[X] Aumentar o tamanho das letras
 
-[ ] Colocar uma div com o maps e o endereço do consultorio
+[X] Colocar uma div com o maps e o endereço do consultorio
 
 [ ] Colocar a logo do whatsapp no canto inferior e colocar elas também nas páginas sobre_mim
 
-[ ] Colocar as avaliações dos pacientes
+[X] Colocar as avaliações dos pacientes
 
 [x] Revisão gramatical
 
-[ ] Tentar trazer mais imagens
+[X] Tentar trazer mais imagens
