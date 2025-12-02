@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta name="description"
+        content="Aires Ramon - Psicólogo Clínico em Porto Ferreira. Atendimento presencial para crianças, adolescentes e adultos.">
+    <title>Aires Ramon dos Reis - Psicólogo Clínico</title>
 
-    <link rel="shortcut icon" href="/public/images/logo_aires_psicologo.png" type="image/x-icon">
-    <title>Aires Ramon dos Reis</title>
+    <meta property="og:title" content="Aires Ramon - Psicólogo">
+    <meta property="og:description" content="Psicólogo Clínico em Porto Ferreira">
+    <!-- <meta property="og:image" content="https://dominio.com/images/aires.jpeg"> -->
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+
+    <link rel="shortcut icon" href="./public/images/logo_aires_psicologo.png" type="image/x-icon">
+    <link rel="preload" as="image" href="./public/images/logo_aires_psicologo.png">
+    <link rel="preload" as="image" href="./public/images/aires.jpeg">
 </head>
 
 
 <body>
     <header class="cabecalho">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                <path
+                    d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8zm0 4.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </label>
         <nav class="navbar">
             <a href="index.html">início</a>
             <a href="sobre_mim.html">sobre mim</a>
             <a href="contato.html">contato</a>
-            <a href="meu_Trabalho.html">meu trabalho</a>
-            <a href="#faq">saiba mais</a>
+            <a href="meu_trabalho.html">meu trabalho</a>
+            <a href="#faq">Saiba mais</a>
         </nav>
 
         <div class="banner-container">
-            <img style="width: 15vw;" alt="banner" class="banner" src="../../public/images/logo_aires_psicologo.png"
+            <img alt="banner" class="banner" src="./public/images/logo_aires_psicologo.png"
                 alt="Logotipo do consultório">
         </div>
     </header>

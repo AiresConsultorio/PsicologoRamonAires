@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <meta name="description"
+        content="Aires Ramon - Psicólogo Clínico em Porto Ferreira. Atendimento presencial para crianças, adolescentes e adultos.">
+    <title>Aires Ramon dos Reis - Psicólogo Clínico</title>
 
-    <link rel="shortcut icon" href="/public/images/logo_aires_psicologo.png" type="image/x-icon">
-    <title>Página de Aires Ramon dos Reis/Sobremim</title>
+    <meta property="og:title" content="Aires Ramon - Psicólogo">
+    <meta property="og:description" content="Psicólogo Clínico em Porto Ferreira">
+    <!-- <meta property="og:image" content="https://dominio.com/images/aires.jpeg"> -->
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+
+    <link rel="shortcut icon" href="./public/images/logo_aires_psicologo.png" type="image/x-icon">
+    <link rel="preload" as="image" href="./public/images/logo_aires_psicologo.png">
+    <link rel="preload" as="image" href="./public/images/aires.jpeg">
 </head>
 
 
 <body>
     <header class="cabecalho">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                <path
+                    d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8zm0 4.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </label>
         <nav class="navbar">
             <a href="index.html">início</a>
             <a href="sobre_mim.html">sobre mim</a>
             <a href="contato.html">contato</a>
-            <a href="meu_Trabalho.html">meu trabalho</a>
-            <a href="#faq">saiba mais</a>
+            <a href="meu_trabalho.html">meu trabalho</a>
+            <a href="#faq">Saiba mais</a>
         </nav>
+
         <div class="banner-container">
-            <img class="banner" src="../../public/images/logo_aires_psicologo.png" alt="Logotipo do consultório">
+            <img alt="banner" class="banner" src="./public/images/logo_aires_psicologo.png"
+                alt="Logotipo do consultório">
         </div>
     </header>
     
@@ -34,12 +51,14 @@
                 <div class="introducao-titulos">
                     <h1>Aires Ramon dos Reis</h1>
                     <h2>Psicólogo Clínico</h2>
+                    <h3>Minha forma de trabalho</h3>
                 </div>
                 <div class="introducao-texto">
-                    <p>Aires Ramon dos Reis, psicólogo formado pelo Centro Universitário Central Paulista (UNICEP) em 2018. Possuo especialização em Psicologia Infantil pela Faculdade Futura (2020) e, atualmente, curso pós-graduação em Neuropsicologia e Avaliação Psicológica e Psicodiagnóstico pela Faculdade Alcance (FAAL), com conclusão prevista para fevereiro de 2026.</p>
-                    <p>Comprometo-me com a excelência no atendimento clínico, fundamentando minhas intervenções em evidências científicas e na escuta qualificada das demandas individuais de cada cliente. Busco continuamente aprimoramento profissional por meio de formações complementares, participação em congressos e atualização constante na literatura especializada.</p>
-                    <p>Meu propósito é promover o desenvolvimento psicológico e o bem-estar de crianças, adolescentes e adultos, por meio de intervenções éticas, respeitosas e eficazes, centradas nas necessidades cognitivas, emocionais e comportamentais de cada indivíduo.</p>
+                    <p>Antes da consulta, começaremos com uma entrevista para poder compreender o motivo da pessoa estar me procurando, histórico pessoal e familiar, principais sintomas notados ou dificuldades relatadas. Após a entrevista, consigo determinar o método mais adequado para avaliar o caso, podendo incluir testes psicológicos validados, escalas, observação comportamental, e caso necessário, entrevistas complementares com familiares ou responsáveis.</p>
+                    
+                    <p>Com os dados obtidos através dos métodos, elaboro uma hipótese diagnóstica e faço a utilização de um plano de intervenção individualizado. Na etapa de planejamento do tratamento, levo em conta os objetivos do cliente, contexto na qual ele está inserido e as abordagens teóricas que norteiam meu trabalho. Esse plano de intervenção será periodicamente ajustado conforme a evolução do paciente e das futuras sessões.</p>
                 </div>
+                <a class="button" href="https://wa.me/5519998518780">Agendar Consulta</a>
             </aside>
         </section>
 
@@ -53,6 +72,7 @@
                         <a id="pag_contato" href="contato.html">Contatos</a>
                     </div>
                 </div>
+
 
                 <div class="card">
                     <h3 class="card-titulo">Hórarios</h3>
@@ -71,13 +91,11 @@
             </div>
         </section>
     </main>
+
     <footer class="rodape">
         <h5>Site desenvolvido por alunos da FATEC Porto Ferreira</h5>
         <nav class="footerbar">
-            <div>
-                
-            </div>
-            <a class="WP" href="https://wa.me/5519998518780" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                <a class="WP" href="https://wa.me/5519998518780" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32"
                     height="32" fill="green" class="bi bi-whatsapp" viewBox="0 0 16 16">
                     <path
                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
@@ -89,7 +107,6 @@
                 </svg>@psi_airesreis</a>
         </nav>
     </footer>
-
 </body>
 
 </html>

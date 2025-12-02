@@ -115,18 +115,6 @@ section:nth-child(odd) .card .card-texto a {
     color: var(--main);
 }
 
-.coments {
-    font-size: 15px;
-}
-
-#fabio {
-    font-size: 13px;
-}
-
-#vera {
-    font-size: 20px;
-}
-
 
 section:nth-child(odd) .card {
     color: var(--secondary);
