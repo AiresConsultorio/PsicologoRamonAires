@@ -71,13 +71,16 @@ section:nth-child(odd) .card .card-texto a {
 .card-texto p {
     margin: 0;
     font-size: 1.05rem;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
 }
 
 .card-texto a {
     color: inherit;
     text-decoration: underline;
     font-weight: 600;
-    word-break: break-all;
+    text-decoration: none;
+    display: block; 
 }
 
 .card-texto a:hover {
