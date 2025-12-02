@@ -1,8 +1,9 @@
 .rodape {
-    background-color: var(--main);
+    background-color: #036b85;
     color: white;
     padding: 40px 20px 30px;
     margin-top: auto;
+    
 }
 
 .footer-container {
@@ -10,24 +11,41 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row; /* Alterado para linha */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre as colunas */
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
+    gap: 20px; /* Espaço entre as colunas */
 }
 
 .footer-credito {
     font-size: 0.95rem;
     margin-bottom: 24px;
     opacity: 0.9;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
 }
 
+/* Estilo para a coluna do mapa */
+.maps {
+    flex: 0 0 32%; /* Ocupa 32% da largura, não cresce, não encolhe */
+    max-width: 32%;
+}
+
+.maps iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* Estilo para a coluna dos links */
 .footer-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Links empilhados verticalmente */
+    gap: 15px;
+    flex: 1; /* Ocupa o espaço restante */
+    max-width: 300px; /* Largura máxima para os links */
 }
 
 .footer-link {
@@ -41,8 +59,7 @@
     transition: all 0.3s ease;
     padding: 10px 16px;
     border-radius: 12px;
-    justify-content: center;
-    width: 30%;
+    justify-content: flex-start; /* Alinha à esquerda */
 }
 
 .footer-link:hover {
@@ -51,15 +68,55 @@
 }
 
 .footer-link.whatsapp {
-    color: white
+    color: white;
 }
 
 .footer-link.instagram {
-    color: white
+    color: white;
 }
 
 .footer-link svg {
     flex-shrink: 0;
+}
+
+/* Estilo para a coluna do endereço */
+.footer-endereco {
+    flex: 0 0 30%; /* Ocupa 30% da largura */
+    max-width: 30%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.footer-endereco p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Empilha as colunas em telas menores */
+        gap: 30px;
+    }
+
+    .maps,
+    .footer-links,
+    .footer-endereco {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer-endereco {
+        text-align: center;
+    }
+
+    .footer-links {
+        max-width: 100%;
+    }
+
+    .footer-link {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
