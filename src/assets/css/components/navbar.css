@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .navbar a {
@@ -42,47 +42,80 @@
     top: 12px;
     right: 15px;
     z-index: 1001;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     padding: 10px 12px;
     border-radius: 8px;
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        justify-content: flex-start;
-        transform: translateY(-100%);
-        flex-direction: column;
-        height: auto;
-        padding-top: 70px;
-        transition: transform 0.35s ease;
-    }
 
-    .navbar a {
-        width: 100%;
-        justify-content: center;
-        padding: 18px 20px;
-        border-bottom: 1px solid rgba(255,255,255,0.15);
-        font-size: 1.1rem;
-    }
-
+    
     .menu-hamburger {
         display: block;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 100000;
+        background: rgba(0,0,0,0.35);
+        padding: 12px;
+        border-radius: 12px;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.15);
     }
 
-    #menu-toggle:checked ~ .navbar {
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50dvh;                    
+        background: var(--main);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-110%);
+        transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+        z-index: 99999;                  
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    
+    .navbar a {
+        width: 100%;
+        padding: 22px;
+        font-size: 1.35rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    
+    #menu-toggle:checked + .menu-hamburger + .navbar {
         transform: translateY(0);
     }
 
-    #menu-toggle:checked ~ .cabecalho::before {
+
+    
+    #menu-toggle:checked ~ .cabecalho::after {
         content: "";
         position: fixed;
         inset: 0;
-        background: rgba(0,0,0,0.65);
-        z-index: 999;
+        background: rgba(0,0,0,0.85);
+        z-index: 99998;
     }
 
+    
     .banner-container {
-        padding: 30px 20px 40px; 
+        padding-top: 90px;       
+        padding-bottom: 40px;
+    }
+
+   
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
     }
 }
