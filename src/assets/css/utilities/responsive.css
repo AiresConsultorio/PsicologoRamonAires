@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-label {
+        display: block;
+        cursor: pointer;
+        padding: 10px 20px;
+        background: rgba(0,0,0,0.1);
+        text-align: center;
+        font-weight: bold;
+        color: var(--secondary);
+    }
+
+    #menu-toggle ~ .navbar a {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .navbar a {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .introducao {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .airesImagem img {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .introducao-container {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .introducao-titulos h1 {
+        font-size: 1.8em;
+    }
+
+    .introducao-titulos h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 45%;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        width: 100%;
+        min-width: auto;
+        margin: 15px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    section > h2 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .footerbar a {
+        margin: 0;
+    }
+
+    .WP, .Insta {
+        margin-right: 0;
+    }
+
+    h5 {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 16px;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.6em; }
+    h3 { font-size: 1.3em; }
+
+    .button {
+        width: 90%;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .introducao-texto p {
+        text-indent: 0;
+        padding: 0 10px;
+    }
+}
